@@ -3,7 +3,7 @@
 FROM nginx:latest
 
 # Copy the static HTML files to the Nginx container
-COPY ./html /usr/share/nginx/html
+COPY ./nginx/* /usr/share/nginx/html
 
 # Make port 80 available to the world outside this container
 EXPOSE 80
